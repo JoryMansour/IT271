@@ -16,7 +16,25 @@ function convert() {
     result = inputValue / 2.54; 
   } else if (fromUnit === "inch" && toUnit === "cm") { 
     result = inputValue * 2.54; 
-  } else if (fromUnit === "cm" && toUnit === "feet") { 
+  } 
+  
+  else if (fromUnit === "meter" && toUnit === "meter") { 
+    result = inputValue *1; 
+  }else if (fromUnit === "cm" && toUnit === "cm") { 
+    result = inputValue *1; 
+  } else if (fromUnit === "feet" && toUnit === "feet") { 
+    result = inputValue *1; 
+  } else if (fromUnit === "inch" && toUnit === "inch") { 
+    result = inputValue *1; 
+  } else if (fromUnit === "yard" && toUnit === "yard") { 
+    result = inputValue *1; 
+  } else if (fromUnit === "mile" && toUnit === "mile") { 
+    result = inputValue *1; 
+  } else if (fromUnit === "kilometer" && toUnit === "kilometer") { 
+    result = inputValue *1; 
+  } 
+
+  else if (fromUnit === "cm" && toUnit === "feet") { 
     result = inputValue / 30.48; 
   } else if (fromUnit === "feet" && toUnit === "cm") { 
     result = inputValue * 30.48; 
